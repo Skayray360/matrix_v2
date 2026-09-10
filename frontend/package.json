@@ -1,0 +1,43 @@
+{
+  "name": "matrix-rh-frontend",
+  "private": true,
+  "version": "1.2.3",
+  "type": "module",
+  "description": "Interfaz de Matrix RH (React + TypeScript + Vite)",
+  "author": "Aldo Garcia",
+  "packageManager": "npm@11.9.0+sha512.04166853ddba142ca98f86fb57b1258a7c6c59ccb82acb3cf141b77a315898acaaed47395e74f7e0c7b69c486008e68be6a6381ef1aee5a23dd82e0e61decd68",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "e2e": "playwright test",
+    "e2e:install": "playwright install chromium",
+    "audit:prod": "npm audit --omit=dev --audit-level=low",
+    "audit:all": "npm audit"
+  },
+  "dependencies": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.62.1",
+    "@testing-library/jest-dom": "6.6.3",
+    "@testing-library/react": "16.1.0",
+    "@testing-library/user-event": "14.5.2",
+    "@types/node": "22.20.1",
+    "@types/react": "18.3.18",
+    "@types/react-dom": "18.3.5",
+    "@vitejs/plugin-react": "6.0.5",
+    "jsdom": "25.0.1",
+    "typescript": "5.7.2",
+    "vite": "8.2.1",
+    "vitest": "4.1.11"
+  },
+  "engines": {
+    "node": ">=22.12.0",
+    "npm": ">=10"
+  }
+}
